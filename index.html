@@ -10,26 +10,34 @@
     <meta name = "viewport" content = "width=device-width">
 
     <link href = "theme.css" rel = "stylesheet" type = "text/css">
+    <link href = "index.css" rel = "stylesheet" type = "text/css">
 
     <script src = "library/ajax-kit.js" type = "text/javascript"></script>
     <script src = "library/dom-kit.js" type = "text/javascript"></script>
 
   </head>
 
-  <body>
+  <body id = "body">
 
-    <script type = "text/javascript">AJAXKit.import("header.html");</script>
+    <script type = "text/javascript">AJAXKit.import("templates/header.html");</script>
 
     <div id = "content">
 
-      <p>Content coming soon</p>
+      <div id = "about">
+
+        <h1>About Us</h1>
+        <p>We are a small HVAC company located in the New River Valley of rural Virginia. Our goal is to provide you with the quality service and products you need to make your home or business as comfortable and cost effective as possible. Many times we find issues with HVAC units that can be easily corrected to prolong the life of your system while keeping you comfortable and saving you money on your electric bill. We can do it all, from maintaining your current system to installing a brand new one! We have many new cost saving options that take advantage of modern technology to heat and cool your home on demand, take up less space, and keep money in your wallet, where it belongs!</p>
+
+      </div>
+
+      <script type = "text/javascript">AJAXKit.import("templates/contact.html");</script>
 
     </div>
 
-    <script type = "text/javascript">AJAXKit.import("footer.html");</script>
-
+    <script type = "text/javascript">AJAXKit.import("templates/footer.html");</script>
+<!--
     <script type = "text/javascript">alert("This website is under construction and may not be operating propperly. Thank you for your patience.\n\n- Total Comfort Team")</script>
-
+-->
   </body>
 
 </html>

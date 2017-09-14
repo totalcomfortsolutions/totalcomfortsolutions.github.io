@@ -177,9 +177,9 @@ AJAXKit.requestParsedHTML = function(url, callBack) {
 
         callBack(html);
 
-      });
+        });
 
-    }); return; break;
+      }); return; break;
 
     case "js":
 
@@ -187,7 +187,17 @@ AJAXKit.requestParsedHTML = function(url, callBack) {
       element.setAttribute("src", url);
       element.setAttribute("type", "text/javascript");
 
-   break;
+    break;
+
+    case "svg": AJAXKit.request(url, "GET", function(request) {
+
+      AJAXKit.parseHTML(request.responseText, function(html) {
+
+        callBack(html);
+
+      });
+
+    }); return; break;
 
   }
 

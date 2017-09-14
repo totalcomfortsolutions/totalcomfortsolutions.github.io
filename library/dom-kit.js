@@ -20,6 +20,12 @@ DOMKit.createElement = function(tag_name, attributes, content) {
 
 };
 
+DOMKit.getWidth = function(element) {
+
+  return element.getBoundingClientRect().width;
+
+};
+
 DOMKit.setAttributes = function(element, attributes) {
 
   var attribute_pair;

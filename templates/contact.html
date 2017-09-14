@@ -1,0 +1,56 @@
+<div id = "contact">
+
+  <h1 id = "contact-title">Contact Us!</h1>
+
+  <form id = "contact-form">
+
+    <div class = "contact-textdiv">
+      <input class = "contact-textfield" id = "contact-first-name" type = "text" value = "first name">
+    </div>
+    <div class = "contact-textdiv">
+      <input class = "contact-textfield" id = "contact-last-name" type = "text" value = "last name">
+    </div>
+    <div class = "contact-textdiv">
+      <input class = "contact-textfield" id = "contact-address" type = "text" value = "address">
+    </div>
+    <div class = "contact-textdiv">
+      <input class = "contact-textfield" id = "contact-phone" type = "text" value = "phone #">
+    </div>
+
+    <div class = "contact-checkdiv">
+      <input class = "contact-checkbox" id = "contact-estimate" type = "checkbox">
+      <label for = "contact-estimate">I am interested in getting a price on repairing/upgrading my current system</label>
+    </div>
+
+    <div class = "contact-checkdiv">
+      <input class = "contact-checkbox" id = "contact-service" type = "checkbox">
+      <label for = "contact-service">There is a problem with my system and I need it fixed!</label>
+    </div>
+
+    <div class = "contact-checkdiv">
+      <input class = "contact-checkbox" id = "contact-installation" type = "checkbox">
+      <label for = "contact-installation">I would like to inquire about installing a new energy efficient system in my home</label>
+    </div>
+
+    <div contenteditable = "true" id = "contact-comment">Add some specific details about your problem</div>
+
+    <div id = "contact-submit-buttons">
+
+      <a>email</a>
+      <a>text</a>
+      <a>call</a>
+
+    </div>
+
+  </form>
+
+</div>
+
+<script type = "text/javascript">
+
+  document.head.appendChild(DOMKit.createElement("link", ["href=templates/contact.css", "rel=stylesheet", "type=text/css"]));
+  document.currentScript.parentNode.removeChild(document.currentScript);
+
+</script>
+
+<script src = "templates/contact.js" type = "text/javascript"></script>

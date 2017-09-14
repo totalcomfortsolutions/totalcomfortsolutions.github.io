@@ -1,0 +1,127 @@
+/* Frank Poth 08/24/2017 */
+
+#header {
+
+  --header-tools-height:48px;
+  --header-content-height:480px;
+
+  background-image:url("header-background.jpg");
+  background-position:center;
+  background-size:cover;
+  box-shadow:0px 4px 4px #000000;
+  display:grid;
+  grid-area:header;
+  grid-template-areas:"tools" "content";
+  grid-template-columns:auto;
+  grid-template-rows:auto auto;
+  height:calc(var(--header-tools-height) + var(--header-content-height));
+  width:100%;
+
+}
+
+#header a {
+
+  color:#ffffff;
+  cursor:pointer;
+  text-decoration:none;
+  text-shadow:#000000 0px 4px 4px;
+
+}
+
+#header-tools {
+
+  align-items:center;
+  background-color:rgba(0, 0, 0, 0.9);
+  display:grid;
+  grid-area:tools;
+  grid-template-areas:"title phone";
+  grid-template-columns:auto auto;
+  grid-template-rows:auto;
+  height:var(--header-tools-height);
+  padding:0 4px;
+  width:100%;
+
+}
+
+#header-phone {
+
+  display:grid;
+  grid-area:phone;
+  justify-self:center;
+
+}
+
+#header-title {
+
+  color:#c0b0d0;
+  cursor:default;
+  font-family: 'Lobster', cursive;
+  font-size:2.5em;
+  font-weight:100;
+  user-select:none;
+
+}
+
+#header-content {
+
+  display:grid;
+  grid-area:content;
+  grid-template-areas:"nothing social-links" "site-links site-links";
+  grid-template-columns:auto auto;
+  grid-template-rows:auto auto;
+  height:var(--header-content-height);
+  width:100%;
+
+}
+
+#header-social-links {
+
+  align-self:flex-start;
+  background-color:rgba(255, 255, 255, 0.25);
+  display:grid;
+  grid-area:social-links;
+  grid-template-columns: auto auto;
+  grid-template-rows:auto;
+  justify-content:space-around;
+  width:100%;
+
+}
+
+.header-social-link {
+
+  padding:8px;
+
+}
+
+#header-site-links {
+
+  align-self:flex-end;
+  align-content:center;
+  background-color:rgba(255, 255, 255, 0.25);
+  display:grid;
+  grid-area:site-links;
+  grid-template-columns:auto auto auto;
+  grid-template-rows:auto;
+  height:48px;
+  justify-content:space-around;
+
+}
+
+.header-site-link {
+
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:3.0em;
+  padding:8px;
+  user-select:none;
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .header-site-link {
+
+    font-size:1.5em;
+
+  }
+
+}

@@ -1,0 +1,79 @@
+/* Frank Poth 08/24/2017 */
+
+#footer {
+
+  display:grid;
+  grid-area:footer;
+  grid-template-areas:"logo map" "links links";
+  grid-template-columns:2fr 1fr;
+  grid-template-rows:auto auto;
+  width:100%;
+
+}
+
+#footer-logo {
+
+  align-self:center;
+  grid-area:logo;
+  justify-self:center;
+  max-width:512px;
+  width:calc(100% - 16px);
+
+}
+
+
+#footer-map-container {
+
+  background-color:var(--dark-theme);
+  box-shadow:0px 4px 4px #000000;
+  display:grid;
+  grid-area:map;
+  grid-template-columns:auto;
+  grid-template-rows:auto;
+  padding:4px;
+
+}
+
+#footer-map {
+
+  border:none;
+  justify-self:center;
+  max-width:480px;
+  width:100%
+
+}
+
+#footer-links {
+
+  display:grid;
+  grid-area:links;
+  grid-template-columns:auto;
+  grid-template-rows:auto;
+  height:48px;
+  z-index:100;
+
+}
+
+.footer-link {
+
+  align-self:center;
+  color:#000000;
+  display:grid;
+  font-weight:800;
+  justify-self:center;
+  text-align:center;
+  text-decoration:none;
+
+}
+
+@media screen and (max-width: 720px) {
+
+  #footer {
+
+    grid-template-areas:"map" "logo" "links";
+    grid-template-columns:auto;
+    grid-template-rows:auto auto auto;
+
+  }
+
+}
